@@ -23,4 +23,9 @@ public class UpdateSystem : MonoSingleTon<UpdateSystem>
             yield return null;
         }
     }
+
+    public void Add_Update(Action updateAction)
+    {
+        updateActionHashSet.Add(updateAction);
+    }
 }
