@@ -14,13 +14,14 @@ public class UpdateSystem : MonoSingleTon<UpdateSystem>
 
     IEnumerator Update_Coroutine()
     {
+        var fixedUpdate = new WaitForFixedUpdate();
         while (true)
         {
             foreach (var action in updateActionHashSet)
             {
                 action?.Invoke();
             }
-            yield return null;
+            yield return fixedUpdate;
         }
     }
 

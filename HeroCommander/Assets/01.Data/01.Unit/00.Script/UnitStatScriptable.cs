@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 using System;
 
@@ -32,4 +31,7 @@ public struct UnitStat
 
     [SerializeField] private float armor;
     public float Armor { get => armor; set => armor = value; }
+
+    [SerializeField] private float attackDelay;
+    public float AttackDelay => attackDelay;
 }

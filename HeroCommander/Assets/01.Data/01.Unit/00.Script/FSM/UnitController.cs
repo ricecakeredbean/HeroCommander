@@ -9,17 +9,18 @@ public abstract class UnitController<T> : MonoBehaviour where T : Unit
     protected UnitState<T> currentState;
     protected abstract UnitState<T> IdleState { get; set; }
 
-    private void Awake()
+    protected void Awake()
     {
         instance = GetComponent<T>();
     }
 
-    private void Start()
+    protected void Start()
     {
+        ChangeState(IdleState);
         UpdateSystem.Instance.Add_Update(Unit_Action);
     }
 
-    private void Unit_Action()
+    protected void Unit_Action()
     {
         currentState?.OnUpdate();
     }
