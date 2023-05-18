@@ -12,6 +12,9 @@ public class UnitStatScriptable : ScriptableObject
 
     [SerializeField] private LayerMask layer;
     public LayerMask Layer => layer;
+
+    [SerializeField] private WeaponType weapon;
+    public WeaponType Weapon => weapon;
 }
 
 [Serializable]
@@ -33,5 +36,5 @@ public struct UnitStat
     public float Armor { get => armor; set => armor = value; }
 
     [SerializeField] private float attackDelay;
-    public float AttackDelay => attackDelay;
+    public float AttackDelay { get => attackDelay; set => attackDelay = value; }
 }

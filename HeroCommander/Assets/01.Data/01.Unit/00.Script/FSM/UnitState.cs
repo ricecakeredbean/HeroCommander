@@ -10,6 +10,7 @@ public class UnitState<T> : IState<T> where T : Unit
     }
     public virtual void OnUpdate()
     {
+
     }
     public virtual void OnExit()
     {

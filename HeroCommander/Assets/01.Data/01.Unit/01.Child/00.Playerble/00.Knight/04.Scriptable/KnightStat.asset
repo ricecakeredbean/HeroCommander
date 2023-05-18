@@ -18,8 +18,9 @@ MonoBehaviour:
     speed: 5
     range: 1
     armor: 10
-    attackDelay: 1.5
+    attackDelay: 1
   factionType: 0
   layer:
     serializedVersion: 2
     m_Bits: 8
+  weapon: 0
