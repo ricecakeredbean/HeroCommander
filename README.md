@@ -6,4 +6,4 @@
     <li>FSM을 이용한 자동 전투형 게임</li>
   </ul>
 </div>
-현재 제작중단
+<span style="font-size:50%">제작중단</span>
