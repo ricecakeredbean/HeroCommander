@@ -1,5 +1,7 @@
 <h1 align ="center">Hero Commander</h1>
 <div align = "left">
+  <h2>프로젝트 소개</h2>
+  Hero Commander는 모바일 자동전투 시스템을 구현하기 위한 연습용 유니티 프로젝트입니다.
   <h2>사용한기능 소개</h2>
   <ul>
     <li>비트 플래그 - 캐릭터 상태이상을 여러개 만들고 중첩시키기 위해 사용했습니다.
